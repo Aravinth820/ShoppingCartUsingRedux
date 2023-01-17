@@ -5,11 +5,6 @@ import Total from "./Total";
 import { useSelector, useDispatch } from "react-redux";
 import { DisplayPrice, DisplayProducts } from "./Reducer/AddCartAction";
 export default function App() {
-  // const [total, setTotal] = useState(0);
-  // const [addcart, setAddCart] = useState(0);
-  // const [count, setCount] = useState(0);
-  // const [display, setDisplay] = useState(0);
-
   const total = useSelector((state) => state.total);
   const addcart = useSelector((state) => state.addcart);
   const count = useSelector((state) => state.count);
@@ -24,12 +19,7 @@ export default function App() {
 
       <div className="fullpage">
         <div className="page">
-          <Total
-          // total={total}
-          // count={count}
-          // setTotal={setTotal}
-          // setCount={setCount}
-          />
+          <Total />
         </div>
       </div>
       <br />
@@ -42,9 +32,6 @@ export default function App() {
               onClick={() => {
                 dispatch(DisplayPrice(total));
                 dispatch(DisplayProducts(count));
-
-                // setAddCart(total);
-                // setDisplay(count);
               }}
             >
               addcart

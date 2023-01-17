@@ -37,3 +37,17 @@ export const DisplayProducts = (displayproducts) => {
     payLoad: displayproducts
   };
 };
+
+export const IncCounterItems = (inccounter) => {
+  return {
+    type: "INCCOUNTERITEMS",
+    payLoad: inccounter
+  };
+};
+
+export const DecCounterItems = (deccounter) => {
+  return {
+    type: "DECCOUNTERITEMS",
+    payLoad: deccounter
+  };
+};

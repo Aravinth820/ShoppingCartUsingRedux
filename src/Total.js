@@ -13,13 +13,7 @@ export default function Total(props) {
       <h1>{item.price}</h1>
       <img src={item.img} alt="mobile" />
       <br />
-      <Counter
-        price={item.price}
-        // total = {props.total}
-        // setTotal = {props.setTotal}
-        // count = {props.count}
-        // setCount = {props.setCount}
-      />
+      <Counter price={item.price} id={item.key} />
     </div>
   ));
 }
